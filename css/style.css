@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div.mainWrapper{
+    padding: 85px 0px;
+    background-color: rgb(211, 207, 255);
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    margin-bottom: 45px;
+}
+
+div.clockWrapper{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background-image: url(../img/clockface3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: 50%;
+    border: 13px solid #383835;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 16px 12px #585858;
+}
+
+
+div.clockWrapper::before{
+    content: '';
+    position: absolute;
+    background: #383835;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+div.hours{
+    height: 235px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+}
+
+div.hours::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 120px;
+    background-image: url(../img/kata1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.minutes{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(30deg);
+}
+
+div.minutes::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 135px;
+    background-image: url(../img/kata2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.seconds{
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(30deg);
+}
+
+div.seconds::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 181px;
+    background:crimson;
+}
+
+
